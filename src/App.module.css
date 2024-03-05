@@ -12,6 +12,13 @@
   box-sizing: border-box;
 }
 
+.Content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 2px;
+  border: 1px solid #cfced3;
+}
+
 a {
   color: #000000;
   transition: color ease-in-out 0.3s;
@@ -37,4 +44,27 @@ i:hover {
   cursor: pointer;
   transition: color ease-in-out 0.6s;
   color: #21b239;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+figure {
+  text-align: center;
+  display: inline-block;
+}
+
+/* scrollbar */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+*::-webkit-scrollbar-thumb {
+  background: #888;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
