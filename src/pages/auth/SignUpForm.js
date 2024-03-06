@@ -28,6 +28,7 @@ const SignUpForm = () => {
     const history = useHistory();
 
     const handleChange = (event) => {
+        console.log(event.target.name, event.target.value);
         setSignUpData({
         ...signUpData,
         [event.target.name]: event.target.value,
@@ -43,6 +44,8 @@ const SignUpForm = () => {
         setErrors(err.response?.data);
         }
     };
+
+    console.log(username, password1, password2);
 
     return (
         <Row className={styles.Row}>
